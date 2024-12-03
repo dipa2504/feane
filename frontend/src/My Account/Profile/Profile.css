@@ -1,0 +1,43 @@
+.profile{
+    background-color: rebeccapurple;
+    width: 50%;
+    height: 70vh;
+} 
+
+.profile button a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    gap: 7px;
+}
+
+.profile{
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    height: 80vh;
+    padding: 100px;
+    font-size: larger;
+    font-family: cursive;
+    font-style: italic;
+}
+
+
+.profile form input{
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    height: 5vh;
+    padding:  20px;
+    border: 1px solid black;
+    margin: 10px 0;   
+}
+
+.profile button{
+    width: fit-content;
+    margin: 30px 0;
+    padding: 10px 30px;
+}

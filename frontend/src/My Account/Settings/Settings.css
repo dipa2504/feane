@@ -1,0 +1,111 @@
+.settings-container {
+    background-color: black;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.settings-container button {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 10px 0;
+    /* background-color: #4CAF50; */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.settings-container button:hover {
+    /* background-color: #45a049; */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* .settings-container .edit-profile-btn {
+    background: linear-gradient(90deg, #4CAF50, #66BB6A);
+} */
+
+.settings-container .delete-account-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* .settings-container .delete-account-btn {
+    background: linear-gradient(90deg, #f44336, #e57373);
+} */
+
+.settings-container .delete-account-btn:hover {
+    background: linear-gradient(90deg, #d32f2f, #c62828);
+}
+
+.settings-container .logout-btn {
+    background: linear-gradient(90deg, #FF9800, #FFB74D);
+}
+
+.settings-container .logout-btn:hover {
+    background: linear-gradient(90deg, #FB8C00, #F57C00);
+}
+
+.confirmation-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(218, 172, 172);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 120%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.confirmation-dialog p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.confirmation-dialog button {
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirmation-dialog button:hover {
+    background-color: #da190b;
+}
+
+.confirmation-dialog button:last-child {
+    background-color: #4CAF50;
+}
+
+.confirmation-dialog button:last-child:hover {
+    background-color: #45a049;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,44 @@
+/* AddReview.css */
+
+.addreview {
+    background-color: #222831;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.addreview-review {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.addreview-img img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Add some space below the image */
+}
+
+.addreview-review input[type="text"],
+.addreview-review h3 {
+    width: 80%; /* Adjust the input and heading width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.addreview-review h3 {
+    margin-top: 0;
+}
+
+.addreview button{
+    text-decoration: none;
+    width: fit-content;
+    background-color: orange;
+    color: white;
+    margin-top: 20px;
+}

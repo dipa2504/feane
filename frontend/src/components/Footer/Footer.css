@@ -1,0 +1,138 @@
+.footer {
+    background-color: #222831;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Main Footer Content */
+.footer footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer .footer1 {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    min-width: 200px;
+}
+
+.footer .footer1 h2 {
+    font-family: cursive;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer .footer1 p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Icon Styling */
+.footer .footer1 .icons p {
+    background-color: white;
+    color: #222831;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    transition: transform 0.2s;
+}
+
+.footer .footer1 .icons p:hover {
+    transform: scale(1.1);
+}
+
+.footer .footer1 a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer .footer1 a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom Footer Section */
+.footer .footer2 {
+    background-color: #222831;
+    color: white;
+    font-size: 0.9em;
+    padding: 15px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .footer footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .footer .footer1 {
+        width: 45%;
+    }
+
+    .footer .footer1 h2 {
+        font-size: 1.3em;
+    }
+
+    .footer .footer1 p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer .footer1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .footer1 h2 {
+        font-size: 1.2em;
+    }
+
+    .footer .footer1 p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer .footer1 h2 {
+        font-size: 1.1em;
+    }
+
+    .footer .footer1 p {
+        font-size: 0.8em;
+    }
+
+    .footer .footer1 .icons p {
+        font-size: 1em;
+        padding: 6px;
+    }
+
+    .footer .footer2 {
+        font-size: 0.8em;
+    }
+}

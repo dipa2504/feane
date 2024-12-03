@@ -1,0 +1,177 @@
+.register2 {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831;
+    padding: 20px;
+}
+
+.register .wrapper {
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(225, 255, 255, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 20px;
+}
+
+.register .form-box {
+    width: 100%;
+}
+
+form h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.form-box .input-box,
+.gender-dropdown,
+.remember-forgot,
+.register-button {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.input-box input,
+select {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(225, 255, 255, .1);
+    border-radius: 40px;
+    padding: 15px;
+    font-size: 1rem;
+    color: white;
+    color-scheme: white;
+    outline: none;
+}
+
+.input-box input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Inverts colors to make the icon white */
+}
+
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gender-dropdown select,
+select option {
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+    appearance: none; /* Hides the default dropdown icon */
+    outline: none;
+}
+
+.gender-dropdown select option {
+    background-color: white; 
+    color: black; 
+    width: fit-content;
+}
+
+.gender-dropdown {
+    width: 100%;
+    position: relative;
+}
+
+.gender-dropdown::after {
+    content: "▼"; 
+    font-size: 1rem;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+.remember-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+form button {
+    width: 100%;
+    height: 45px;
+    background-color: orange;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.register-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-button button{
+    width: 30%;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+@media (max-width: 768px) {
+    .register .wrapper {
+        width: 90%;
+        padding: 15px;
+    }
+
+    form h1 {
+        font-size: 1.5rem;
+    }
+
+    .register-button button {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    form h1 {
+        font-size: 1.2rem;
+    }
+
+    .input-box input,
+    select {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    form button {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .register-button button {
+        width: 45%;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,179 @@
+.menu-page{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 0 0 100px 0;
+}
+
+.menu-page h1 {
+    width: 100%;
+    height: 15vh;
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+    font-family: cursive;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.menu ul {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.foods {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.foods .box {
+    background-color: #222831;
+    color: white; 
+    width: 100%;
+    height: 65vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.foods .box:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+.foods img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    transition: 0.3s ease;
+    object-fit: cover;
+}
+
+.foods .img {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 50px;
+}
+
+.foods .title h3 {
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.foods .title {
+    width: 100%;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.foods .price {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;    
+    font-size: 20px;
+}
+
+.price button {
+    border-radius: 100%;
+    width: 15%;
+    height: 7vh;
+    padding: 0;
+    font-size: 20px;
+}
+
+.box:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+    .foods {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        gap: 20px;
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+
+    .menu-page h1 {
+        font-size: 32px;
+    }
+
+
+    .foods img {
+        max-width: 150px;
+    }
+
+    .foods .price {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .price button {
+        width: 20%;
+        height: 6vh;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-page {
+        padding: 0 0 50px 0;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+
+    .foods {
+        width: 95%;
+        gap: 20px;
+    }
+
+    .foods {
+        grid-template-columns: 1fr;
+    }
+
+    .foods img {
+        width: 80%;
+    }
+
+    .foods .price {
+        font-size: 18px;
+    }
+}
