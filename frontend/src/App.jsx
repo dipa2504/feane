@@ -20,7 +20,7 @@ import axios from 'axios'
 import ResetPassword from './components/ResetPassword/ResetPassword'
 
 
-// const url = process.env.REACT_APP_API_URL;
+const url = process.env.REACT_APP_API_URL;
 
 
 export const ManiCont = createContext()
