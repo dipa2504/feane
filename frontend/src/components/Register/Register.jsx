@@ -15,7 +15,8 @@ const Register = () => {
         x.preventDefault()
 
         try {
-            let result = await axios.post('http://localhost:1000/register', user)
+            // let result = await axios.post('http://localhost:1000/register', user)
+            let result = await axios.post('https://feane.onrender.com', user)
             if (result.data.success) {
                 let msg = 'Hello ' + result.data.user.name + ' you are now registered!'
                 alert(msg)
