@@ -15,7 +15,8 @@ const Login = () => {
         x.preventDefault();
 
         try {
-            const result = await axios.post('http://localhost:1000/login', user)
+            // const result = await axios.post('http://localhost:1000/login', user)
+            const result = await axios.post('https://feane.onrender.com', user)
             
             if (result.data.success) {
                 let msg = 'Hi ' + result.data.user.name + ' you are now logged in!'
