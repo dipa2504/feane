@@ -9,6 +9,7 @@ const BookSchema = mongoose.Schema({
     time: String
 })
 
-const Book = mongoose.model('customers', BookSchema)
+const Book = mongoose.model('booking', BookSchema)
 
 module.exports = Book
+

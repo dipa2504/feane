@@ -7,17 +7,44 @@ const User = require('./models/User')
 const Food = require('./models/Food')
 const Review = require('./models/Review')
 const Order = require('./models/Order')
+const Book = require('./models/Book')
 
 app.use(cors({origin: 'http://localhost:5173'}))
+
 require('./mongoose')
 
-app.listen(1000, () => {
-    console.log('app started on 1k')
-})
+// app.listen(1000, () => {
+//     console.log('app started on 1k')
+// })
+
+const port = process.env.PORT || 1000;
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
 
 app.get('/', (req, res) => {
     res.send('hi')
 })
+
+// app.post('/book-table', async (req, res) => {
+//     const { name, mobile, email, numberOfPersons, date, time } = req.body;
+//     try {
+//         const newBooking = new Book({
+//             name,
+//             mobile,
+//             email,
+//             numberOfPersons,
+//             date,
+//             time
+//         });
+//         const result = await newBooking.save();
+//         res.send({ success: true, msg: 'Booking successful', booking: result });
+//     } catch (error) {
+//         console.error(error);
+//         res.send({ success: false, msg: 'Error saving booking' });
+//     }
+// });
+
 
 app.post('/register', async (req, res) => {
     const { name, email, mobile, password, date, address, gender } = req.body

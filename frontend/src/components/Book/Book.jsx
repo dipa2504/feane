@@ -14,6 +14,7 @@ const Book = () => {
         formData.append("subject", `${firstName} sent a message from Feane`); // Include first name in subject
 
         const response = await fetch("https://api.web3forms.com/submit", {
+        // const response = await fetch("http://localhost:1000/book-table", {    
             method: "POST",
             body: formData
         });
@@ -21,7 +22,7 @@ const Book = () => {
         const data = await response.json();
 
         if (data.success) {
-            setResult("Form Submitted Successfully");
+            setResult("Booking Successful");
             event.target.reset();
         } else {
             console.log("Error", data);
