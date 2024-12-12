@@ -9,7 +9,8 @@ const Review = require('./models/Review')
 const Order = require('./models/Order')
 const Book = require('./models/Book')
 
-app.use(cors({origin: 'http://localhost:5173'}))
+// app.use(cors({origin: 'http://localhost:5173'}))
+app.use(cors({origin: 'https://feane-frontend.onrender.com'}))
 
 require('./mongoose')
 
